@@ -909,9 +909,9 @@ LogDebug(message) {
     timestamp := FormatTime(A_Now, "yyyy-MM-dd HH:mm:ss")
     FileAppend("[" timestamp "] " message "`n", DebugLogFile, "UTF-8")
 }
-Test
 
 ; ──────────────── Clipboard Restore ────────────────
 RestoreClipboard(clipData) {
     A_Clipboard := clipData
 }
+test
