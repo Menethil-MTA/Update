@@ -6,7 +6,7 @@
 Persistent
 
 ; ──────────────── Version ────────────────
-global CurrentVersion := "1.0.0"
+global CurrentVersion := "1.0.1"
 
 ; ──────────────── Force Init ALL Globals ────────────────
 global ScriptEnabled := false
@@ -909,6 +909,7 @@ LogDebug(message) {
     timestamp := FormatTime(A_Now, "yyyy-MM-dd HH:mm:ss")
     FileAppend("[" timestamp "] " message "`n", DebugLogFile, "UTF-8")
 }
+Test
 
 ; ──────────────── Clipboard Restore ────────────────
 RestoreClipboard(clipData) {
