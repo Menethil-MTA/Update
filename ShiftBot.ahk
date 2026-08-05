@@ -6,7 +6,7 @@
 Persistent
 
 ; ──────────────── Version ────────────────
-global CurrentVersion := "1.0.1"
+global CurrentVersion := "1.0.0"
 
 ; ──────────────── Force Init ALL Globals ────────────────
 global ScriptEnabled := false
@@ -914,4 +914,3 @@ LogDebug(message) {
 RestoreClipboard(clipData) {
     A_Clipboard := clipData
 }
-test
