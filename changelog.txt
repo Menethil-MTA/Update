@@ -1,0 +1,32 @@
+╔══════════════════════════════════╗
+║     What's New in v1.0.0        ║
+╚══════════════════════════════════╝
+
+🆕 NEW FEATURES:
+  ◆ Fish1 & Fish2 are now separate locations
+  ◆ Location Count auto-refreshes every 1 second
+  ◆ Brand new modern dark theme GUI with tabs
+  ◆ Changelog shown after every update
+  ◆ Daily XP now properly resets at midnight
+
+🛠 IMPROVEMENTS:
+  ◆ Shift cooldown reduced to 30 seconds (retake at 14:30)
+  ◆ Update system completely rewritten
+  ◆ BOM bug fixed in update files
+  ◆ F12 now toggles the GUI on/off
+  ◆ Settings tab for name & log path
+
+🎨 UI CHANGES:
+  ◆ 4 organized tabs (Shifts / Locations / XP / Settings)
+  ◆ Clean dark theme (GitHub Dark style)
+  ◆ Better button colors & layout
+  ◆ Draggable title bar
+
+🐛 BUG FIXES:
+  ◆ Location Count no longer gets desynced
+  ◆ Daily XP reset timing fixed
+  ◆ F12 window title bug resolved
+  ◆ Update BOM encoding issue solved
+
+────────────────────────────────────
+Thank you for using ShiftBot! ♥
