@@ -1,0 +1,10 @@
+🔄 ShiftBot v1.0.2
+
+✨ What's New:
+• 🌐 Dual Language (English & فارسی)
+• 🎯 F10 Random/Manual Location modes
+• 🛡️ Anti-Double Shift Protection
+• ⚡ Enhanced processing & stability
+• 🐛 Fixed duplicate shift bug
+
+Switch languages in Settings tab!
