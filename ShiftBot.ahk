@@ -454,39 +454,55 @@ UpdateProgram(*) {
         return
     
     try {
-        ; دانلود فایل EXE
-        whr := ComObject("WinHttp.WinHttpRequest.5.1")
-        whr.Open("GET", "https://raw.githubusercontent.com/Menethil-MTA/Update/refs/heads/main/ShiftBot.exe", false)
-        whr.SetTimeouts(10000, 10000, 10000, 10000)
-        whr.Send()
+        ; دانلود مستقیم فایل EXE
+        exePath := A_ScriptDir "\ShiftBot.exe"
+        try FileDelete(exePath)
         
-        if (whr.Status = 200) {
-            ; ذخیره فایل EXE
-            exePath := A_ScriptDir "\ShiftBot.exe"
-            try FileDelete(exePath)
-            FileAppend(whr.ResponseBody, exePath, "RAW")
-            
+        ; استفاده از UrlDownloadToFile
+        URLDownloadToFile("https://raw.githubusercontent.com/Menethil-MTA/Update/refs/heads/main/ShiftBot.exe", exePath)
+        
+        if FileExist(exePath) {
             ; ساخت فایل BAT
             batchFile := A_ScriptDir "\_update.bat"
             try FileDelete(batchFile)
             
             batContent := "@echo off`r`n"
             batContent .= "timeout /t 2 /nobreak >nul`r`n"
-            batContent .= "del /f /q `"" A_ScriptFullPath "`"`r`n"  ; ← حذف فایل AHK فعلی
-            batContent .= "start `"`" `"" exePath "`"`r`n"  ; ← اجرای EXE
+            batContent .= "del /f /q `"" A_ScriptFullPath "`"`r`n"
+            batContent .= "start `"`" `"" exePath "`"`r`n"
             batContent .= "del /f /q `"" batchFile "`"`r`n"
             FileAppend(batContent, batchFile, "UTF-8")
             
             Run(batchFile, , "Hide")
             ExitApp()
         } else {
-            MsgBox("Failed to download update.`nStatus: " whr.Status, "Error", "IconX 4096")
+            MsgBox("Download failed!", "Error", "IconX 4096")
         }
     } catch as err {
         MsgBox("Update failed:`n" err.Message, "Error", "IconX 4096")
     }
 }
 
+; تابع دانلود
+URLDownloadToFile(url, filename) {
+    try {
+        whr := ComObject("WinHttp.WinHttpRequest.5.1")
+        whr.Open("GET", url, true)
+        whr.Send()
+        whr.WaitForResponse()
+        
+        ; ذخیره با ADODB.Stream
+        ado := ComObject("ADODB.Stream")
+        ado.Type := 1
+        ado.Open()
+        ado.Write(whr.ResponseBody)
+        ado.SaveToFile(filename, 2)
+        ado.Close()
+        return true
+    } catch {
+        return false
+    }
+}
 ; ──────────────── Save MyName ────────────────
 SaveMyName(*) {
     global MyNameEdit, MyName, ConfigFile
