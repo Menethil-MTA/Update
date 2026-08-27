@@ -6,7 +6,7 @@
 Persistent
 
 ; ──────────────── Version ────────────────
-global CurrentVersion := "1.0.2"
+global CurrentVersion := "1.0.4"
 
 ; ──────────────── Force Init ALL Globals ────────────────
 global ScriptEnabled := false
