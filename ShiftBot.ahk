@@ -479,9 +479,6 @@ UpdateProgram(*) {
             
             Run(batchFile, , "Hide")
             ExitApp()
-        }
-    }
-}
         } else {
             MsgBox("Failed to download update.`nStatus: " whr.Status, "Error", "IconX 4096")
         }
