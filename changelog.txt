@@ -1,10 +1,31 @@
-🔄 ShiftBot v1.0.2
+╔══════════════════════════════════════════════════════════════╗
+║                    SHIFTBOT v2.1.0                           ║
+║                 MAJOR UPDATE - NEW STYLE                     ║
+╚══════════════════════════════════════════════════════════════╝
 
-✨ What's New:
-• 🌐 Dual Language (English & فارسی)
-• 🎯 F10 Random/Manual Location modes
-• 🛡️ Anti-Double Shift Protection
-• ⚡ Enhanced processing & stability
-• 🐛 Fixed duplicate shift bug
+🎨 NEW MESSAGE STYLE
+─────────────────────────
+• Complete redesign of all messages
+• New format: ► Start Shift [Name] ◄ ST: 20:03 ● Loc: Medic ● ET: 20:18
+• All rejection messages updated
+• GST, CCTV, and CNN messages redesigned
 
-Switch languages in Settings tab!
+🔧 IMPROVEMENTS
+─────────────────────────
+• Fixed Check for Updates (now correctly detects version)
+• Cleanup system now only removes bot files
+• Better file management on update
+• Improved download system
+• Removed old AHK files from repository
+
+📦 UPDATE SYSTEM
+─────────────────────────
+• Direct EXE download (no more AHK)
+• Safe file replacement during updates
+• Automatic removal of old files
+
+──────────────────────────────────────────────
+⚠️ IMPORTANT: This update includes major changes.
+Please contact the developer if you encounter issues.
+
+📱 Stay updated for future improvements!
