@@ -1,31 +1,58 @@
 ╔══════════════════════════════════════════════════════════════╗
-║                    SHIFTBOT v2.1.0                           ║
-║                 MAJOR UPDATE - NEW STYLE                     ║
+║                    SHIFTBOT v2.7.0                           ║
+║                 MAJOR SECURITY UPDATE                        ║
 ╚══════════════════════════════════════════════════════════════╝
 
-🎨 NEW MESSAGE STYLE
+🔒 SECURITY ENHANCEMENTS
 ─────────────────────────
-• Complete redesign of all messages
-• New format: ► Start Shift [Name] ◄ ST: 20:03 ● Loc: Medic ● ET: 20:18
-• All rejection messages updated
-• GST, CCTV, and CNN messages redesigned
+• Advanced HWID-based license system
+• Real-time whitelist & blacklist verification
+• Automatic access check every 60 seconds
+• Remote kill switch for instant disable
+• Force update system with visual alert
+• Secure .exe format (no more .ahk editing)
 
-🔧 IMPROVEMENTS
+📝 REGISTRATION SYSTEM
 ─────────────────────────
-• Fixed Check for Updates (now correctly detects version)
-• Cleanup system now only removes bot files
-• Better file management on update
-• Improved download system
-• Removed old AHK files from repository
+• First-time setup requires name registration
+• Automatic submission to admin database
+• Hardware-based activation (one license per PC)
+• Admin approval required before use
+• Access check every minute to prevent bypass
+
+⚡ PERFORMANCE IMPROVEMENTS
+─────────────────────────
+• Shift start time now shows actual time (HH:mm)
+• Improved message sending speed
+• Better handling of multiple requests
+• Live status cards in control panel
+• Real-time updates for all panel sections
 
 📦 UPDATE SYSTEM
 ─────────────────────────
-• Direct EXE download (no more AHK)
+• Force update with visual countdown
+• Automatic update downloader
 • Safe file replacement during updates
-• Automatic removal of old files
+• Fixed version detection
+• Temporary file handling for safe updates
+
+🎨 UI IMPROVEMENTS
+─────────────────────────
+• Modern dark theme
+• Live status indicators
+• Smooth window appearance
+• Improved tab navigation
+• Real-time data refresh
+
+🔧 BUG FIXES
+─────────────────────────
+• Fixed version comparison
+• Fixed file download issues
+• Fixed registration bypass
+• Improved stability
 
 ──────────────────────────────────────────────
-⚠️ IMPORTANT: This update includes major changes.
-Please contact the developer if you encounter issues.
+⚠️ IMPORTANT: This version requires re-registration.
+Contact the developer to get your new license.
 
 📱 Stay updated for future improvements!
